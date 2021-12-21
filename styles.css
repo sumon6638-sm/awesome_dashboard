@@ -90,7 +90,7 @@ li.active .lists-item {
   border-radius: 50%;
   box-shadow: 15px -15px 0 #b7d6a7;
   z-index: 2;
-  transition: all 2s;
+  transition: all 5s;
 }
 
 /* set-2 */
@@ -317,7 +317,7 @@ li.active .lists-item {
   background-color: #b7d6a7;
   top: 43px;
   left: 0;
-  transition: top 3s ease-in-out !important;
+  transition: top 1s ease-in-out !important;
   z-index: 1;
 }
 
