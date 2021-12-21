@@ -13,228 +13,336 @@
 <body>
     <div class="mx-auto">
         <div class="dashboard w-2/6 sticky top-8" style="border-radius: 25px">
+
             <ul class="ml-4 list">
                 <div class="active-tab"></div>
                 <li id="" class="lists-item bg-[#4A5A63] border-b border-black px-20 py-2"
-                    style="border-top-left-radius: 25px; border-top-right-radius: 25px; z-index: 2;">
+                    style="border-top-left-radius: 25px; border-top-right-radius: 25px;">
                     <div>Balances</div>
                 </li>
 
-                <li id="" class="active bg-[#3A572B] single-item border-b border-black py-2 px-2" data-active="0">
-                    <div class="lists-item flex justify-between">
-                        <a href="#assets" class="title z-10">Assets</a>
+                <li id="" class="active bg-[#3A572B] border-b border-black py-2 px-2" data-active="0">
+                    <div class="lists-item-set-1 single-item flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#assets" class="title z-10">Assets</a>
                         <div class="balance z-10">$1,494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#C78938] single-item border-b border-black py-2 px-2" data-active="1">
-                    <div class="lists-item flex justify-between">
-                        <a href="#cash" class="title z-10">Cash</a>
+                    <div class="lists-item-set-2 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#cash" class="title z-10">Cash</a>
                         <div class="balance z-10">$116,819</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#C78938] single-item border-b border-black py-2 px-2" data-active="2">
-                    <div class="lists-item flex justify-between">
-                        <a href="#fargo" class="title z-10">Wells Fargo</a>
+                    <div class="lists-item-set-2 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#fargo" class="title z-10">Wells Fargo</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
-                <li id="" class="bg-[#C78938] single-item border-b border-black py-2 px-2" data-active="3">
-                    <div class="lists-item flex justify-between">
-                        <a href="#america" class="title z-10">Bank of America</a>
+                <li id="" class="bg-[#C78938] america single-item border-b border-black py-2 px-2" data-active="3">
+                    <div class="lists-item-set-2 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#america" class="title z-10">Bank of America</a>
                         <div class="balance z-10">$100,000</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#587347] single-item border-b border-black py-2 px-2" data-active="4">
-                    <div class="lists-item flex justify-between">
-                        <a href="#investment" class="title z-10">Investments</a>
+                    <div class="lists-item-set-3 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#investment" class="title z-10">Investments</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#82A159] single-item border-b border-black py-2 px-2" data-active="5">
-                    <div class="lists-item flex justify-between">
-                        <a href="#greenstart" class="title z-10">Greenstart IRA</a>
+                    <div class="lists-item-set-4 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#greenstart" class="title z-10">Greenstart IRA</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#82A159] single-item border-b border-black py-2 px-2" data-active="6">
-                    <div class="lists-item flex justify-between">
-                        <a href="#fiedlity" class="title z-10">Fiedlity</a>
+                    <div class="lists-item-set-4 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#fiedlity" class="title z-10">Fiedlity</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#82A159] single-item border-b border-black py-2 px-2" data-active="7">
-                    <div class="lists-item flex justify-between">
-                        <a href="#etrade" class="title z-10">E-Trade</a>
+                    <div class="lists-item-set-4 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#etrade" class="title z-10">E-Trade</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#82A159] single-item border-b border-black py-2 px-2" data-active="8">
-                    <div class="lists-item flex justify-between">
-                        <a href="#morgan" class="title z-10">Morgan Stanley</a>
+                    <div class="lists-item-set-4 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#morgan" class="title z-10">Morgan Stanley</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#A41726] single-item border-b border-black py-2 px-2" data-active="9">
-                    <div class="lists-item flex justify-between">
-                        <a href="#real" class="title z-10">Real Estate</a>
+                    <div class="lists-item-set-5 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#real" class="title z-10">Real Estate</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#CA302D] single-item border-b border-black py-2 px-2" data-active="10">
-                    <div class="lists-item flex justify-between">
-                        <a href="#mainst" class="title z-10">123 Main St</a>
+                    <div class="lists-item-set-6 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#mainst" class="title z-10">123 Main St</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#CA302D] single-item border-b border-black py-2 px-2" data-active="11">
-                    <div class="lists-item flex justify-between">
-                        <a href="#elmst" class="title z-10">987 Elm St</a>
+                    <div class="lists-item-set-6 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#elmst" class="title z-10">987 Elm St</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#CA302D] single-item border-b border-black py-2 px-2" data-active="12">
-                    <div class="lists-item flex justify-between">
-                        <a href="#bilbo" class="title z-10">101 Bilbo blvd</a>
+                    <div class="lists-item-set-6 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#bilbo" class="title z-10">101 Bilbo blvd</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#CA302D] single-item border-b border-black py-2 px-2" data-active="13">
-                    <div class="lists-item flex justify-between">
-                        <a href="#warehouse" class="title z-10">99 warehouse Blvd</a>
+                    <div class="lists-item-set-6 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#warehouse" class="title z-10">99 warehouse Blvd</a>
                         <div class="balance z-10">$494,863</div>
                     </div>
                 </li>
 
                 <li id="" class="bg-[#3B7193] single-item border-b border-black py-2 px-2" data-active="14">
-                    <div class="lists-item flex justify-between">
-                        <a href="#misc" class="title z-10">Misc Assets</a>
+                    <div class="lists-item-set-7 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#misc" class="title z-10">Misc Assets</a>
                         <div class="balance z-10">$494,863</div>
+                    </div>
+                </li>
+
+                <li id="" class="bg-[#79A3BD] single-item border-b border-black py-2 px-2" data-active="15">
+                    <div class="lists-item-set-8 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#cessna" class="title z-10">1999 Cessna 172S</a>
+                        <div class="balance z-10">$566,566</div>
+                    </div>
+                </li>
+
+                <li id="" class="bg-[#79A3BD] single-item border-b border-black py-2 px-2" data-active="16">
+                    <div class="lists-item-set-8 flex justify-between font-medium text-white">
+                        <a onclick="getLink(this)" href="#elm" class="title z-10">987 Elm St</a>
+                        <div class="balance z-10">$200,000</div>
                     </div>
                 </li>
             </ul>
         </div>
 
-        <div id='assets' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Assets</h1>
-        </div>
+        <div class="content-details">
+            <div id='assets'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1
+                    class="align-middle text-9xl font-500 text-center text-[#10B981] transition-all duration-1000 ease-in-out">
+                    Assets</h1>
+            </div>
 
-        <div id='cash' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Cash</h1>
-        </div>
+            <div id='cash'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FED788] item-details z-8"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981] fade-in-text">Cash</h1>
+            </div>
 
-        <div id='fargo' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">wells Fargo</h1>
-        </div>
+            <div id='fargo'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FED788] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">wells Fargo</h1>
+            </div>
 
-        <div id='america' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Bank of America</h1>
-        </div>
+            <div id='america'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FED788] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Bank of America</h1>
+            </div>
 
-        <div id='investment'
-            class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Investments</h1>
-        </div>
+            <div id='investment'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#6EE7B7]">Investments</h1>
+            </div>
 
-        <div id='greenstart'
-            class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Greenstart IRA</h1>
-        </div>
+            <div id='greenstart'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#C6D9AE] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Greenstart IRA</h1>
+            </div>
 
-        <div id='fiedlity' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Fiedlity</h1>
-        </div>
+            <div id='fiedlity'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#C6D9AE] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Fiedlity</h1>
+            </div>
 
-        <div id='etrade' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">E-Trade</h1>
-        </div>
+            <div id='etrade'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#C6D9AE] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">E-Trade</h1>
+            </div>
 
-        <div id='morgan' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Morgan Stanley</h1>
-        </div>
+            <div id='morgan'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#C6D9AE] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Morgan Stanley</h1>
+            </div>
 
-        <div id='real' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Real Estate</h1>
-        </div>
+            <div id='real'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FFABB3] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Real Estate</h1>
+            </div>
 
-        <div id='mainst' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">123 Main St</h1>
-        </div>
+            <div id='mainst'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FECACA] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">123 Main St</h1>
+            </div>
 
-        <div id='elmst' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">987 Elm St</h1>
-        </div>
+            <div id='elmst'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FECACA] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">987 Elm St</h1>
+            </div>
 
-        <div id='bilbo' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">101 Bilbo blvd</h1>
-        </div>
+            <div id='bilbo'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FECACA] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">101 Bilbo blvd</h1>
+            </div>
 
-        <div id='warehouse' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">99 warehouse Blvd</h1>
-        </div>
+            <div id='warehouse'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#FECACA] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">99 warehouse Blvd</h1>
+            </div>
 
-        <div id='misc' class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#B7D6A7] item-details"
-            style="height: 95vh; border-radius: 25px">
-            <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Misc Assets</h1>
+            <div id='misc'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#ABDFFF] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#10B981]">Misc Assets</h1>
+            </div>
+
+            <div id='cessna'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#BFD3E0] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#82A159]">1999 Cessna 172S</h1>
+            </div>
+
+            <div id='elm'
+                class="p-2 m-4 text-white h-full flex justify-center items-center bg-[#BFD3E0] item-details fade-in-text"
+                style="height: 100vh; border-radius: 25px">
+                <h1 class="align-middle text-9xl font-500 text-center text-[#82A159]">987 Elm St</h1>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('items-center').on('click', function () {
+                        $(this).siblings().removeClass('pickBgColour');
+                        $(this).addClass('pickBgColour');
+                    })
+                })
+            </script>
         </div>
     </div>
 
-    <script>
-
+    <script type="text/javascript">
         const dashboard_links = document.querySelectorAll(".dashboard li");
-        const active_tab = document.querySelector(".active-tab");
+        dashboard_links.forEach(link => link.addEventListener("click", changeLink));
 
         let activeIndex;
 
+        const active_tab = document.querySelector(".active-tab");
+
+        function changeLink() {
+            dashboard_links.forEach(sideLink => sideLink.classList.remove("active"));
+            this.classList.add("active");
+            activeIndex = this.dataset.active;
+            moveActiveTab();
+
+            // alert(getAttribute("href"));
+        }
+
+        function getLink(obj) {
+            let a_id = obj.getAttribute("href").split("#");
+            console.log(a_id[1])
+
+            let backgroundColorActive = document.getElementById(a_id[1])
+            let backgroundColor = window.getComputedStyle(backgroundColorActive).backgroundColor;
+            console.log(backgroundColor);
+
+            document.querySelector(".active-tab").style.backgroundColor = backgroundColor;
+
+            const divStyle = document.getElementById(a_id[1]);
+            divStyle.classList.add("fade-in-text");
+        }
+
         function moveActiveTab() {
             let topPosition = activeIndex * 44 + 44;
-            console.log(topPosition);
-
-            if (activeIndex > 20) {
-                topPosition += shortcuts.clientHeight;
-            }
+            // console.log(topPosition);
 
             active_tab.style.top = `${topPosition}px`;
         }
 
-        function changeLink() {
-            // console.log("hello");
-            dashboard_links.forEach(sideLink => sideLink.classList.remove("active"));
-            this.classList.add("active");
+        const pickBody = document.querySelectorAll(".content-details div");
+        pickBody.forEach(body => body.addEventListener("click", changeBody));
 
-            activeIndex = this.dataset.active;
-            // console.log(activeIndex);
+        function changeBody() {
+            pickBody.forEach(bodyPicker => bodyPicker.classList.remove("pickBackground"));
+            this.classList.add("pickBackground");
+            // let backgroundColor = backgroundColorActive.dataset.themeBg;
 
-            moveActiveTab();
         }
 
-        dashboard_links.forEach(link => link.addEventListener("click", changeLink));
+        let colorTimeout = setTimeout(showColor, 5000);
+
+        function showColor() {
+            // let backgroundColorActive = document.querySelectorAll("pickBackground").style.backgroundColor;
+            // let myDivObjBgColor = window.getComputedStyle(backgroundColorActive).backgroundColor;
+            // let myDivObjBgColor = backgroundColorActive.dataset.themeBg;
+
+            // console.log(backgroundColorActive);
+        }
+        console.log(colorTimeout);
+
+
+
+        // const backgroundColorActive = document.getElementById("misc").style.backgroundColor;
+
+
+        // const cornerBottom = document.querySelector(".li.active .lists-item-set.after");
+
+
+        // function moveActiveTab() {
+
+
+
+        /* let shadow = document.getElementsByClassName(".lists-item-set"); */
+
+            // active_tab.dataset.themeBg = myDivObjBgColor;
+
+        /* shadow.style.boxShadow = `15px 15px 0 ${myDivObjBgColor}`; */
+
+            // cornerBottom.style.boxShadow = `15px -15px 0 ${myDivObjBgColor}`;
+            // console.log(myDivObjBgColor);
+
+            // active_tab.style.backgroundColor = colorTimeout;
+            // active_tab.style.transition = 'all 2s ease-in-out';
+
+
     </script>
 </body>
 
